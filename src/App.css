@@ -1,38 +1,535 @@
+:root {
+  --rose: #da2354;
+  --aquagreen: #01e09a;
+  --darkgreen: #037d56;
+  --shadow: #1f1d1d;
+  --pink: #ff85c8;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: var(--pink);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
+}
 .App {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Watermelon {
+  position: relative;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.whole {
+  position: relative;
+  background-color: var(--aquagreen);
+  top: 3.6rem;
+  left: 3.4rem;
+  height: 5.7rem;
+  width: 6.2rem;
+  overflow: hidden;
+  border-radius: 9.375rem 9.375rem 9.375rem 9.375rem;
+}
+.whole div:nth-child(n) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 5.2rem;
+  left: 1.4rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(1) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 5.2rem;
+  left: 2.5rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(2) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 5.2rem;
+  left: 3.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(3) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0rem;
+  left: 1.4rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(4) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0rem;
+  left: 2.5rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(5) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0rem;
+  left: 3.6rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(6) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 0.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(7) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 0.1rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(8) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 1.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(9) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 1rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(10) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 2.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(11) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 2rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(12) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 3.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(13) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 3rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(14) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 4.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(15) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 4rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(16) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 4.2rem;
+  left: 5.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(17) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 3.9rem;
+  left: 5rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(18) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 0.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(19) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 0.1rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(20) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 1.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(21) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 1rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(22) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 2.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(23) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 2rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(24) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 3.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(25) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 3rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(26) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 4.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(27) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 4rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(28) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 1.2rem;
+  left: 5.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(29) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 0.9rem;
+  left: 5rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(30) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: -0.2rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(31) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: -0.4rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(32) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 0.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(33) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 0.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(34) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 1.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(35) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 1.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(36) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 2.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(37) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 2.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(38) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 3.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(39) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 3.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(40) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 4.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(41) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 4.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.whole div:nth-child(42) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.8rem;
+  left: 5.8rem;
+  border-radius: 0 0 20rem 20rem;
+}
+.whole div:nth-child(43) {
+  position: absolute;
+  background: var(--darkgreen);
+  width: 1.1rem;
+  height: 0.5rem;
+  top: 2.4rem;
+  left: 5.6rem;
+  border-radius: 20rem 20rem 0 0;
+}
+.slice {
+  position: absolute;
+  height: 3rem;
+  width: 6rem;
+  top: 6.3rem;
+  left: 3.5rem;
+  background: var(--aquagreen);
+  border-radius: 0 0 9.375rem 9.375rem;
+  transition: all 0.7s 0s ease-in-out;
+}
+.inside {
+  position: absolute;
+  left: 0.2rem;
+  height: 2.8rem;
+  width: 5.6rem;
+  background: var(--rose);
+  border-radius: 0 0 9.375rem 9.375rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.style {
+  position: absolute;
+  left: 0.2rem;
+  height: 2.8rem;
+  width: 5.6rem;
+  border-radius: 0 0 9.375rem 9.375rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.style div:nth-child(n) {
+  position: relative;
+  left: 0.7rem;
+  bottom: 1.8rem;
+  background: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 2rem 0rem 2rem 0rem;
+  transition: all 0.7s 0s ease-in-out;
+}
+.style div:nth-child(1) {
+  position: relative;
+  left: 2.9rem;
+  bottom: -1.6rem;
+  background-color: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.style div:nth-child(2) {
+  position: relative;
+  left: 4.3rem;
+  bottom: -0.4rem;
+  background-color: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.style div:nth-child(3) {
+  position: relative;
+  left: 2.1rem;
+  bottom: 0.6rem;
+  background-color: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.style div:nth-child(4) {
+  position: relative;
+  left: 3.4rem;
+  bottom: 1rem;
+  background-color: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.style div:nth-child(5) {
+  position: relative;
+  left: 1.7rem;
+  bottom: 0.6rem;
+  background-color: var(--shadow);
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.Watermelon:hover {
+  transition: 0.7s ease;
+}
+.Watermelon:hover .slice {
+  top: 73%;
+  transition: 0.7s ease;
+}
+.Watermelon:active {
+  box-shadow: 0 0 1.25rem var(--aquagreen);
+  background: var(--aquagreen);
+  transition: 0.7s ease-in;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body:active {
+  background: var(--rose);
+  transition: 0.7s ease-in;
 }
